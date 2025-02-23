@@ -1,83 +1,47 @@
-# Turborepo starter
+# @rccpr/ui
 
-This Turborepo starter is maintained by the Turborepo core team.
+A library of components for React, Next.js, and Tailwind CSS.
 
-## Using this example
+## Installation
 
-Run the following command:
+Add it with your preferred package manager.
 
-```sh
-npx create-turbo@latest
+### npm
+
+```bash
+npx jsr add @rccpr/ui
 ```
 
-## What's inside?
+### bun (recommended)
 
-This Turborepo includes the following packages/apps:
-
-### Apps and Packages
-
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
+```bash
+bunx jsr add @rccpr/ui
 ```
 
-### Develop
+### pnpm
 
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
+```bash
+pnpm dlx jsr add @rccpr/ui
 ```
 
-### Remote Caching
+### yarn
 
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
+```bash
+yarn dlx jsr add @rccpr/ui
 ```
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+## Usage
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+Add it to the transpiled packages in your `next.config.ts` file.
 
+```ts
+const nextConfig: NextConfig = {
+  transpilePackages: ["@rccpr/ui"],
+};
 ```
-npx turbo link
+
+Then, you can use the components in your project.
+
+```tsx
+import { Button } from "@rccpr/ui";
 ```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
