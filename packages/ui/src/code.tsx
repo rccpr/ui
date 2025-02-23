@@ -1,5 +1,8 @@
 import { type JSX } from "react";
 
+/**
+ * A code component that displays a code block.
+ */
 export function Code({
   children,
   className,

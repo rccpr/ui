@@ -1,6 +1,6 @@
 "use client";
 
-import { ReactNode } from "react";
+import type { FC, ReactNode } from "react";
 
 interface ButtonProps {
   children: ReactNode;
@@ -8,7 +8,7 @@ interface ButtonProps {
   appName: string;
 }
 
-export const Button = ({ children, className, appName }: ButtonProps) => {
+export const Button: FC<ButtonProps> = ({ children, className, appName }) => {
   return (
     <button
       className={className}

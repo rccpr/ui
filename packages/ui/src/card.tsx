@@ -1,5 +1,8 @@
 import { type JSX } from "react";
 
+/**
+ * A card component that displays a title, description, and link.
+ */
 export function Card({
   className,
   title,

@@ -110,11 +110,6 @@ web_modules/
 
 .parcel-cache
 
-# Next.js build output
-
-.next
-out
-
 # Nuxt.js build / generate output
 
 .nuxt
@@ -173,3 +168,15 @@ dist
 
 # Finder (MacOS) folder config
 .DS_Store
+
+# Turbo
+.turbo
+
+# Vercel
+.vercel
+
+# Next.js build output
+.next/
+out/
+build
+dist
