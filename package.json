@@ -2,9 +2,6 @@
   "name": "rccpr-ui",
   "module": "lib/index.ts",
   "type": "module",
-  "devDependencies": {
-    "@types/bun": "latest"
-  },
   "peerDependencies": {
     "typescript": "^5.0.0"
   }
