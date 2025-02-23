@@ -1,5 +1,6 @@
 {
   "name": "rccpr-ui",
+  "description": "Public UI components that we reuse throughout our apps.",
   "module": "lib/index.ts",
   "type": "module",
   "peerDependencies": {
