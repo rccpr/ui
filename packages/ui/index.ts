@@ -1,3 +1,3 @@
-export { Button } from "./src/button";
-export { Card } from "./src/card";
-export { Code } from "./src/code";
+export { Button } from "./src/components/button";
+export { cn } from "./src/lib/utils";
+export { default as tailwindConfig } from "./tailwind.config";

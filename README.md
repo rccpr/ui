@@ -2,6 +2,8 @@
 
 A library of components for React, Next.js, and Tailwind CSS.
 
+_Uses tailwind v4, React 19, and TypeScript._
+
 ## Installation
 
 Add it with your preferred package manager.
